@@ -6,11 +6,8 @@
 //change the count-el in the HTML to reflect the new count
 
 let countEl = document.getElementById("count-el") //pass in arguments
-console.log(countEl)
-
 let count = 0
-
-
+let saveEl = document.getElementById("save-el")
 
 function increment () {
 
@@ -18,7 +15,7 @@ function increment () {
 
      count += 1
 
-    countEl.innerText = count
+    countEl.textContent = count
 
      console.log("count")
 
@@ -29,9 +26,8 @@ function save () {
 
 let countDash = " " + count + " - "
 
-let saveEl = document.getElementById("save-el")
 
-saveEl.innerText += countDash
+saveEl.textContent += countDash
 
     console.log(countDash)
 }
