@@ -16,7 +16,7 @@ function increment () {
 
     console.log("clicked")
 
-     count = count + 1
+     count += 1
 
     countEl.innerText = count
 
@@ -26,5 +26,12 @@ function increment () {
 
 
 function save () {
-    console.log(count)
+
+let countDash = " " + count + " - "
+
+let saveEl = document.getElementById("save-el")
+
+saveEl.innerText += countDash
+
+    console.log(countDash)
 }
