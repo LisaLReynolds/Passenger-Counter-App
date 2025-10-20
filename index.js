@@ -2,10 +2,29 @@
 
 // initialize the count as 0
 //listen for clicks on the increment button
-//increment the count variable when the button is clicked
+// increment the count variable when the button is clicked (log it out)
 //change the count-el in the HTML to reflect the new count
 
-function increment () {
-    console.log("the button was clicked")
+let countEl = document.getElementById("count-el") //pass in arguments
+console.log(countEl)
 
+let count = 0
+
+
+
+function increment () {
+
+    console.log("clicked")
+
+     count = count + 1
+
+    countEl.innerText = count
+
+     console.log("count")
+
+}
+
+
+function save () {
+    console.log(count)
 }
