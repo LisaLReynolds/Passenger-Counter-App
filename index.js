@@ -29,5 +29,10 @@ let countDash = " " + count + " - "
 
 saveEl.textContent += countDash
 
+count = 0  // set count back to 0
+countEl.textContent = 0  //  set h2 text content back to 0
+
+
+
     console.log(countDash)
 }
